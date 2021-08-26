@@ -1,0 +1,15 @@
+{
+  "name": "myBlog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "author": "HWYD <'1165203865@qq.com'>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.24"
+  }
+}
