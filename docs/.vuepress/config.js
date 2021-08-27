@@ -1,7 +1,7 @@
 module.exports = {
   lang: 'zh-CN',
   title: 'dylan的博客',
-  description: '这是我的第一个 VuePress 站点',
+  description: '认真写点东西',
 
   themeConfig: {
     logo: '/images/logo.jpg',
