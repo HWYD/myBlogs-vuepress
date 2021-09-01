@@ -45,3 +45,6 @@ VuePress 2 已经发布 :tada: ！
 ::: tip
 这是一个提示
 :::
+
+<span v-for="i in 3"> span: {{ i }} </span>
+<div v-for="i in 3"> 我是: {{ i }} </div>

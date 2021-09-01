@@ -20,16 +20,16 @@ module.exports = {
         text: '笔记',
         children: [{
           text: 'CSS',
-          link: '/css-blogs/'
+          link: '/notes/css-notes/'
         }, {
           text: 'JavaScript',
-          link: '/js-blogs/'
+          link: '/notes/js-notes/'
         },{
           text: 'vue',
-          link: '/vue-blogs/'
+          link: '/notes/vue-notes/'
         },{
           text: 'react',
-          link: '/react-blogs/'
+          link: '/notes/react-notes/'
         }],
       },
       {
@@ -48,13 +48,13 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/css-blogs/': [
+      '/notes/css-notes/': [
         {
           text: 'Guide',
           children: ['/guide/README.md', '/guide/getting-started.md'],
         },
       ],
-      '/js-blogs/': [
+      '/notes/js-notes/': [
         {
           text: 'Reference',
           children: ['/reference/cli.md', '/reference/config.md'],
