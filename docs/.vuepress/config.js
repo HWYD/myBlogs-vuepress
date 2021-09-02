@@ -30,6 +30,9 @@ module.exports = {
         },{
           text: 'react',
           link: '/notes/react-notes/'
+        },{
+          text: 'threejs',
+          link: '/blogs/threejsBlogs/threejs.md'
         }],
       },
       {
@@ -61,5 +64,5 @@ module.exports = {
         },
       ],
   }
-  },
+  }
 }
