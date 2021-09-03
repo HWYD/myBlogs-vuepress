@@ -9,60 +9,77 @@ module.exports = {
       // NavbarItem
       {
         text: '主页',
-        link: '/',
+        link: '/'
       },
       {
         text: '标签',
-        link: '/label-blogs/',
+        link: '/label-blogs/'
       },
       // NavbarGroup
       {
         text: '笔记',
-        children: [{
-          text: 'CSS',
-          link: '/notes/css-notes/'
-        }, {
-          text: 'JavaScript',
-          link: '/notes/js-notes/'
-        },{
-          text: 'vue',
-          link: '/notes/vue-notes/'
-        },{
-          text: 'react',
-          link: '/notes/react-notes/'
-        },{
-          text: 'threejs',
-          link: '/blogs/threejsBlogs/threejs.md'
-        }],
+        children: [
+          {
+            text: 'CSS',
+            link: '/notes/css-notes/'
+          },
+          {
+            text: 'JavaScript',
+            link: '/notes/js-notes/'
+          },
+          {
+            text: 'vue',
+            link: '/notes/vue-notes/'
+          },
+          {
+            text: 'react',
+            link: '/notes/react-notes/'
+          },
+          {
+            text: 'threejs',
+            link: '/blogs/threejs-blogs/threejs.md'
+          },
+          {
+            text: 'epubjs',
+            link: '/blogs/epubjs.md'
+          },
+          {
+            text: 'proxy代理',
+            link: '/blogs/js-blogs/useproxy.md'
+          }
+        ]
       },
       {
         text: '时间线',
-        link: '/',
+        link: '/timeline'
       },
       {
         text: '链接',
-        children: [{
-          text: 'github',
-          link: 'https://github.com/HWYD'
-        },{
-          text: 'github',
-          link: 'https://github.com/HWYD'
-        }]
+        children: [
+          {
+            text: 'github',
+            link: 'https://github.com/HWYD'
+          },
+          {
+            text: 'github',
+            link: 'https://github.com/HWYD'
+          }
+        ]
       }
     ],
     sidebar: {
       '/notes/css-notes/': [
         {
           text: 'Guide',
-          children: ['/guide/README.md', '/guide/getting-started.md'],
-        },
+          children: ['/guide/README.md', '/guide/getting-started.md']
+        }
       ],
       '/notes/js-notes/': [
         {
           text: 'Reference',
-          children: ['/reference/cli.md', '/reference/config.md'],
-        },
-      ],
-  }
+          children: ['/reference/cli.md', '/reference/config.md']
+        }
+      ]
+    }
   }
 }
