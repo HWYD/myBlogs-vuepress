@@ -1,10 +1,11 @@
+const { path } = require('@vuepress/utils')
 module.exports = {
   lang: 'zh-CN',
   title: 'dylan的博客',
   description: '认真写点东西',
 
   themeConfig: {
-    logo: '/images/logo.jpg',
+    logo: '/images/face.jpg',
     navbar: [
       // NavbarItem
       {
@@ -46,6 +47,10 @@ module.exports = {
           {
             text: 'proxy代理',
             link: '/blogs/js-blogs/useproxy.md'
+          },
+          {
+            text: '数据结构和算法',
+            link: '/notes/data-structure'
           }
         ]
       },
@@ -81,5 +86,13 @@ module.exports = {
         }
       ]
     }
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
+      },
+    ],
+  ],
 }
