@@ -1,16 +1,29 @@
 <template>
   <div>
-    <el-card shadow="hover" v-for="item in blogsList" :key="item.title" @click="toBlog(item.link)">
-      <!-- <router-link :to="item.link"> -->
-        <div class="blog-title">{{ item.title }}</div>
-        <div>
-          <i class="el-icon-user"></i>
-          <span class="item-desc">{{ item.author }}</span>
-          <i class="el-icon-time"></i>
-          <span class="item-desc">{{ item.createTime }}</span>
-        </div>
-      <!-- </router-link> -->
+    <el-card
+      shadow="hover"
+      v-for="item in blogsList"
+      :key="item.title"
+      @click="toBlog(item.link)"
+    >
+      <div class="blog-title">{{ item.title }}</div>
+      <div>
+        <i class="el-icon-user"></i>
+        <span class="item-desc">{{ item.author }}</span>
+        <i class="el-icon-time"></i>
+        <span class="item-desc">{{ item.createTime }}</span>
+      </div>
     </el-card>
+    <div class="pagination-box">
+      <el-pagination
+        layout="prev, pager, next"
+        :total="totalPages"
+        :page-size="pageSize"
+        @current-change="pageChange"
+        background 
+      >
+      </el-pagination>
+    </div>
   </div>
 </template>
 
@@ -21,14 +34,24 @@ export default {
   data() {
     return {
       blogsList: blogsList,
+      currentPage: 1,
+      pageSize: 5,
+      totalPages: blogsList.length,
     };
   },
-  methods:{
-    toBlog(link){
-      // console.log(link)
-      this.$router.push(link)
-    }
-  }
+  mounted() {
+    this.blogsList = blogsList.slice(0, this.pageSize);
+  },
+  methods: {
+    toBlog(link) {
+      this.$router.push(link);
+    },
+    pageChange(e) {
+      const startIndex = (e - 1) * this.pageSize;
+      const endIndex = startIndex + this.pageSize;
+      this.blogsList = blogsList.slice(startIndex, endIndex);
+    },
+  },
 };
 </script>
 
@@ -42,5 +65,10 @@ export default {
 }
 .item-desc {
   margin: 0 20px 0 5px;
+}
+.pagination-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 </style>
