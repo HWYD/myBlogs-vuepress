@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row :gutter="12">
+    <el-row :gutter="12" v-if="largeScreen">
       <el-col :span="16">
         <BlogsList />
       </el-col>
@@ -8,6 +8,14 @@
         <BlogsDetail />
       </el-col>
     </el-row>
+    <div  v-else>
+      <el-row>
+       <el-col :span="24"><BlogsDetail /></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="24"><BlogsList /></el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -19,6 +27,14 @@ export default {
     BlogsList,
     BlogsDetail,
   },
+  data(){
+    return{
+     largeScreen:window.innerWidth<768?false:true
+    }
+  },
+  mounted(){
+    console.log(this.largeScreen)
+  }
 };
 </script>
 
