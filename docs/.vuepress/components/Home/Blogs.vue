@@ -8,7 +8,7 @@
         <BlogsDetail />
       </el-col>
     </el-row>
-    <div  v-else>
+    <div v-else>
       <el-row>
        <el-col :span="24"><BlogsDetail /></el-col>
       </el-row>
@@ -27,14 +27,14 @@ export default {
     BlogsList,
     BlogsDetail,
   },
-  data(){
-    return{
-     largeScreen:window.innerWidth<768?false:true
-    }
-  },
-  mounted(){
-    console.log(this.largeScreen)
-  }
+  data(){
+    return{
+     largeScreen:true
+    }
+  },
+  mounted(){
+    this.largeScreen=window.innerWidth<768?false:true
+  }
 };
 </script>
 

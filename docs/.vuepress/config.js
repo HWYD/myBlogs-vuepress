@@ -3,7 +3,7 @@ module.exports = {
   lang: 'zh-CN',
   title: 'dylan的博客',
   description: '认真写点东西',
-
+  base:'/myBlogs/',
   themeConfig: {
     logo: '/images/face.jpg',
     navbar: [
