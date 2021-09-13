@@ -8,9 +8,9 @@
         <BlogsDetail />
       </el-col>
     </el-row>
-    <div v-if=" screenSize === 'small'">
+    <div v-if="screenSize === 'small'">
       <el-row>
-       <el-col :span="24"><BlogsDetail /></el-col>
+        <el-col :span="24"><BlogsDetail /></el-col>
       </el-row>
       <el-row>
         <el-col :span="24"><BlogsList /></el-col>
@@ -27,14 +27,14 @@ export default {
     BlogsList,
     BlogsDetail,
   },
-  data(){
-    return{
-     screenSize:''
-    }
-  },
-  mounted(){
-    this.screenSize=window.innerWidth<768?'small':'big'
-  }
+  data() {
+    return {
+      screenSize: "",
+    };
+  },
+  mounted() {
+    this.screenSize = window.innerWidth < 768 ? "small" : "big";
+  },
 };
 </script>
 
