@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row :gutter="12" v-if="largeScreen">
+    <el-row :gutter="12" v-if="screenSize === 'big'">
       <el-col :span="16">
         <BlogsList />
       </el-col>
@@ -8,7 +8,7 @@
         <BlogsDetail />
       </el-col>
     </el-row>
-    <div v-else>
+    <div v-if=" screenSize === 'small'">
       <el-row>
        <el-col :span="24"><BlogsDetail /></el-col>
       </el-row>
@@ -29,11 +29,11 @@ export default {
   },
   data(){
     return{
-     largeScreen:true
+     screenSize:''
     }
   },
   mounted(){
-    this.largeScreen=window.innerWidth<768?false:true
+    this.screenSize=window.innerWidth<768?'small':'big'
   }
 };
 </script>
