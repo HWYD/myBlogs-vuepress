@@ -33,7 +33,7 @@ export default {
   name: "BlogsList",
   data() {
     return {
-      blogsList: blogsList,
+      blogsList: [],
       currentPage: 1,
       pageSize: 5,
       totalPages: blogsList.length,
@@ -47,6 +47,7 @@ export default {
       this.$router.push(link);
     },
     pageChange(e) {
+      console.log(e)
       const startIndex = (e - 1) * this.pageSize;
       const endIndex = startIndex + this.pageSize;
       this.blogsList = blogsList.slice(startIndex, endIndex);
