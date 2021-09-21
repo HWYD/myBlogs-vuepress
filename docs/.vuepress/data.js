@@ -1,9 +1,9 @@
 export const blogsList = [
   {
-    title: "Proxy使用方法总结",
+    title: "在项目中如何封装axios",
     author: "dylan",
-    createTime: "2021-07-05",
-    link: "/blogs/js-blogs/useproxy",
+    createTime: "2021-09-19",
+    link: "/blogs/ajax-blogs/axios-packaging",
   },
   {
     title: "epubjs阅读器",
