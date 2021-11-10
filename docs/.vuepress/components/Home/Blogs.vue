@@ -13,7 +13,7 @@
         <el-col :span="24"><BlogsDetail /></el-col>
       </el-row>
       <el-row>
-        <el-col :span="24"><BlogsList /></el-col>
+        <el-col :span="24" :class="{'list-margin': screenSize === 'small'}"><BlogsList /></el-col>
       </el-row>
     </div>
   </div>
@@ -39,4 +39,7 @@ export default {
 </script>
 
 <style>
+.list-margin{
+  margin-top: 20px;
+}
 </style>

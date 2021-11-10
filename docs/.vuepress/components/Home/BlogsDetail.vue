@@ -15,7 +15,7 @@
       </el-col>
     </el-row>
   </el-card>
-  <el-carousel height="200px" direction="vertical" :autoplay="true">
+  <el-carousel height="200px" direction="vertical" :autoplay="true" :interval="5000">
     <el-carousel-item v-for="item in imgList" :key="item">
       <img :src="item" alt="前端博客" />
     </el-carousel-item>
