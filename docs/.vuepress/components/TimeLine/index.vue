@@ -1,7 +1,7 @@
 <template>
-  <div class="time-wrap">
+  <div class="timeline-wrap">
   <el-timeline>
-    <el-timeline-item  placement="top" v-for="blog in blogsList" :key="blog.link">
+    <el-timeline-item  placement="top" v-for="blog in blogsList" :key="blog.link" @click="toBlog(blog.link)">
       <el-card>
         <h4>{{blog.title}}</h4>
         <p>HWYD {{blog.createTime}}</p>
@@ -29,19 +29,16 @@ export default {
   methods: {
     toBlog(link) {
       this.$router.push(link);
-    },
-    // pageChange(e) {
-    //   console.log(e)
-    //   const startIndex = (e - 1) * this.pageSize;
-    //   const endIndex = startIndex + this.pageSize;
-    //   this.blogsList = blogsList.slice(startIndex, endIndex);
-    // },
-  },
+    }
+  }
 };
 </script>
 
 <style scoped>
-.time-wrap{
+.timeline-wrap{
   margin-top: 30px;
+}
+.el-timeline{
+  cursor: pointer;
 }
 </style>

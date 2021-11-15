@@ -6,11 +6,11 @@
     <el-row class="flex-center"> dylan </el-row>
     <el-row>
       <el-col :span="12">
-        <el-row class="flex-center"> 50 </el-row>
+        <el-row class="flex-center"> 9 </el-row>
         <el-row class="flex-center"> 文章 </el-row>
       </el-col>
       <el-col :span="12">
-        <el-row class="flex-center"> 10 </el-row>
+        <el-row class="flex-center"> 5 </el-row>
         <el-row class="flex-center"> 标签 </el-row>
       </el-col>
     </el-row>
