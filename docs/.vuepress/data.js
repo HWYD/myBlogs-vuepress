@@ -1,5 +1,11 @@
 export const blogsList = [
   {
+    title: "送你一份Vue3的Composition API使用总结分享",
+    author: "dylan",
+    createTime: "2021-11-12",
+    link: "/blogs/vue-blogs/composition-api",
+  },
+  {
     title: "nuxt2安装swiper插件遇到的坑以及过程复现",
     author: "dylan",
     createTime: "2021-09-29",

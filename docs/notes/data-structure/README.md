@@ -1,5 +1,5 @@
 ---
-theme: vuepress
+lastUpdated: false
 ---
 #### 时间复杂度
 定性计算算法运行的时间，用大写的O表示，代码执行一次为O(1),代码循环n次，就为O(n)

@@ -1,5 +1,5 @@
 ---
-theme: vuepress
+lastUpdated: false
 ---
 ## webpack是什么？
 webpack是一个模块打包工具，和webpack相似的工具有：grunt、gulp、browserify
