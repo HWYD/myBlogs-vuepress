@@ -17,43 +17,43 @@ module.exports = {
       //   link: '/label-blogs/'
       // },
       // NavbarGroup
-      {
-        text: '笔记',
-        children: [
-          {
-            text: 'CSS',
-            link: '/notes/css-notes/'
-          },
-          {
-            text: 'JavaScript',
-            link: '/notes/js-notes/'
-          },
-          {
-            text: 'vue',
-            link: '/notes/vue-notes/'
-          },
-          {
-            text: 'react',
-            link: '/notes/react-notes/'
-          },
-          {
-            text: 'threejs',
-            link: '/blogs/threejs-blogs/threejs.md'
-          },
-          {
-            text: 'epubjs',
-            link: '/blogs/epubjs.md'
-          },
-          {
-            text: 'proxy代理',
-            link: '/blogs/js-blogs/useproxy.md'
-          },
-          {
-            text: '数据结构和算法',
-            link: '/notes/data-structure'
-          }
-        ]
-      },
+      // {
+      //   text: '笔记',
+      //   children: [
+      //     {
+      //       text: 'CSS',
+      //       link: '/notes/css-notes/'
+      //     },
+      //     {
+      //       text: 'JavaScript',
+      //       link: '/notes/js-notes/'
+      //     },
+      //     {
+      //       text: 'vue',
+      //       link: '/notes/vue-notes/'
+      //     },
+      //     {
+      //       text: 'react',
+      //       link: '/notes/react-notes/'
+      //     },
+      //     {
+      //       text: 'threejs',
+      //       link: '/blogs/threejs-blogs/threejs.md'
+      //     },
+      //     {
+      //       text: 'epubjs',
+      //       link: '/blogs/epubjs.md'
+      //     },
+      //     {
+      //       text: 'proxy代理',
+      //       link: '/blogs/js-blogs/useproxy.md'
+      //     },
+      //     {
+      //       text: '数据结构和算法',
+      //       link: '/notes/data-structure'
+      //     }
+      //   ]
+      // },
       {
         text: '时间线',
         link: '/timeline'
@@ -61,10 +61,6 @@ module.exports = {
       {
         text: '链接',
         children: [
-          {
-            text: 'github',
-            link: 'https://github.com/HWYD'
-          },
           {
             text: 'github',
             link: 'https://github.com/HWYD'
