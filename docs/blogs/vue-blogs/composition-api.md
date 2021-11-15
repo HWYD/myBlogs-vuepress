@@ -1,7 +1,3 @@
----
-contributors:true
-lastUpdated: false
----
 ### 选项式api的缺点和组合式api解决了什么
   
   在vue2中我们经常使用选项式api这么写代码,这种是通过使用 (`data`、`computed`、`methods`、`watch`) 组件选项来组织逻辑，在vue3版本也可以用，甚至选项式api可以和组合式api混合用(但不推荐)
@@ -449,7 +445,7 @@ export default {
   setup() {
     const router = useRouter();
     const route = useRoute();
-    console.log(myrouter.options.routes)   //可以获取路由表之类的
+    console.log(router.getRoutes())   //可以获取路由表之类的
     console.log(route);                    //可以获取路由参数之类的
 
     const goAbout = () => {        //跳转路由的方法

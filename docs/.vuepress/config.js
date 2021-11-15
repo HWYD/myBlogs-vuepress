@@ -12,10 +12,10 @@ module.exports = {
         text: '主页',
         link: '/'
       },
-      {
-        text: '标签',
-        link: '/label-blogs/'
-      },
+      // {
+      //   text: '标签',
+      //   link: '/label-blogs/'
+      // },
       // NavbarGroup
       {
         text: '笔记',
