@@ -1,5 +1,17 @@
 export const blogsList = [
   {
+    title: "微信小程序实现地图贴图和个性化图标标注",
+    author: "dylan",
+    createTime: "2022-01-09",
+    link: "/blogs/wx-blogs/wx-area",
+  },
+  {
+    title: "简单封装一下小程序wx.request方法",
+    author: "dylan",
+    createTime: "2022-01-04",
+    link: "/blogs/ajax-blogs/wx-packaging",
+  },
+  {
     title: "送你一份Vue3的Composition API使用总结分享",
     author: "dylan",
     createTime: "2021-11-12",
