@@ -1,5 +1,11 @@
 export const blogsList = [
   {
+    title: "Vue3管理系统实现动态路由和动态侧边菜单栏",
+    author: "dylan",
+    createTime: "2022-02-15",
+    link: "/blogs/vue-blogs/dynamic-router-menu",
+  },
+  {
     title: "微信小程序实现地图贴图和个性化图标标注",
     author: "dylan",
     createTime: "2022-01-09",
