@@ -1,5 +1,11 @@
 export const blogsList = [
   {
+    title: "使用git会遇到的场景，看看你中了多少个？",
+    author: "dylan",
+    createTime: "2022-02-20",
+    link: "/blogs/git-blogs/usegit",
+  },
+  {
     title: "Vue3管理系统实现动态路由和动态侧边菜单栏",
     author: "dylan",
     createTime: "2022-02-15",
