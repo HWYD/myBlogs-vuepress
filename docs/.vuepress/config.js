@@ -1,7 +1,7 @@
 const { path } = require('@vuepress/utils')
 module.exports = {
   lang: 'zh-CN',
-  title: 'dylan的博客',
+  title: '倾颜的博客',
   description: '认真写点东西',
   base:'/myBlogs/',
   themeConfig: {

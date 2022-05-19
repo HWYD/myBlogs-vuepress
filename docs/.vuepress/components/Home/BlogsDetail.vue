@@ -3,10 +3,10 @@
     <el-row class="flex-center">
       <img class="face-img" src="../../public/images/face.jpg" />
     </el-row>
-    <el-row class="flex-center"> dylan </el-row>
+    <el-row class="flex-center"> 倾颜 </el-row>
     <el-row>
       <el-col :span="12">
-        <el-row class="flex-center"> 9 </el-row>
+        <el-row class="flex-center"> {{blogsCount}} </el-row>
         <el-row class="flex-center"> 文章 </el-row>
       </el-col>
       <el-col :span="12">
@@ -23,10 +23,12 @@
 </template>
 
 <script>
+import { blogsList } from "../../data";
 export default {
   name: "BlogsDetail",
   data() {
     return {
+      blogsCount:blogsList.length,
       imgList: [
         require("../../public/images/1.jpg"),
         require("../../public/images/2.jpg"),
